@@ -1979,7 +1979,7 @@ def generate_order_pdf(
     y -= 6 * mm
 
     # ✅ НОВЫЕ ЗАГОЛОВКИ: №, Фото, ID, Наименование, Кол-во, Вес, Куб, Цена, Сумма
-    c.setFont(main_font, 9)  # Уменьшенный шрифт для заголовков
+    c.setFont(main_font, 12)  # для заголовков
     header_y = y
 
     c.drawString(table_x, header_y, "№")
@@ -2003,7 +2003,7 @@ def generate_order_pdf(
     c.line(table_x, y + 3 * mm, width - right_margin, y + 3 * mm)
     y -= 4 * mm
 
-    c.setFont(main_font, 9)  # Уменьшенный шрифт для содержимого
+    c.setFont(main_font, 12)  # шрифт для содержимого
     line_height = 5.5 * mm
     max_name_chars = 18  # Уменьшено из-за дополнительных колонок
 
